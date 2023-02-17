@@ -134,9 +134,10 @@ html {
 }
 
 body {
-	background-color: #529ffa;
+	background-color: #60a9ff;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 }
 
@@ -163,13 +164,11 @@ body {
 .pricing-img {
 	margin-bottom: 25px;
 	max-width: 100%;
-	width: 500px;
-	height: 500px;
 }
 
 .pricing-header {
 	color: #888;
-	font-weight: 800;
+	font-weight: 600;
 	letter-spacing: 1px;
 }
 
@@ -222,4 +221,18 @@ body {
 .pricing-button.is-featured:focus {
 	background-color: #269aff;
 	color: white;
+}
+
+@media (min-width: 900px) {
+	.panel {
+		flex-direction: row;
+	}
+	.pricing-plan {
+		border-bottom: none;
+		border-right: 1px solid #e1f1ff;
+		padding: 25px 50px;
+	}
+	.pricing-plan:last-child {
+		border-right: none;
+	}
 }
